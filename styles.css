@@ -7,16 +7,17 @@
     font-family: 'Lora';
 }
 
-img {
-    height: 50px;
-    margin-left: 60px;
+.navbar-img {
+    height: 110px;
+    padding: 0px 200px;
 }
 
 header {
-    background-color: rgb(0, 0, 0);
+    background-color: #2B2B2B;
     display: flex;
-    height: 70px;
+    height: 80px;
     justify-content: space-between;
+    padding: 0px 50px;
     align-items: center;
 }
 
@@ -31,9 +32,145 @@ header {
 
 .navbar-list {
     gap: 30px;
-    font-size: 16px;
+    font-size: 17px;
 }
 
 .navbar-list a {
     color: white;
 }
+
+.navbar-list li {
+    border-bottom: solid 1px pink;
+    transition: all .3s ease;
+}
+
+.navbar-list li:hover {
+    transform: translateY(10px);
+}
+
+main {
+    background-color: #131313;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+#portada {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.portada-info {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    color: white;
+    width: 50%;
+    gap: 15px;
+}
+
+.portada-info h1 {
+    font-size: 28px;
+    color: #de734cf8;
+    font-weight: bolder;
+}
+
+.portada-info p {
+    width: 90%;
+    color: #e2e2e5;
+}
+
+.portada-info span {
+    font-weight: bolder;
+    color: aqua;
+}
+
+
+.portada-info a {
+    color: white;
+    padding: 15px;
+    display: flex;
+    width: 30%;
+    text-align: center;
+    background-color: #1e50ff;
+    border-radius: 20px;
+    transition: all .3s ease;
+    margin-top: 14px;
+    display: block;
+}
+
+.portada-info a:hover {
+    transform: translateX(13px);
+}
+
+.portada-card {
+    background-color: #272d37;
+    padding: 20px;
+    margin-top: 40px;
+    border-radius: 20px;
+    box-shadow: 0 14px 28px rgba(255, 255, 255, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    transition: .4s;
+}
+
+.portada-card:hover {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(255, 255, 255, 0.322);
+    transform: translate(0px -8px);
+}
+
+.portada-card img {
+    height: 400px;
+}
+
+.portada-card-infotop {
+    color: white;
+    display: flex;
+    justify-content: space-between;
+}
+
+.portada-card-infotop h2 {
+    padding: 4px 0px;
+    font-size: 20px;
+}
+
+.portada-card-infotop p {
+    padding: 6px;
+    background-color: #1e50ff;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+}
+
+.portada-card-infobottom {
+    display: flex;
+}
+
+.portada-card-infobottom a {
+    color: white;
+    font-size: 15px;
+    margin-top: 8px;
+    border-bottom: solid 2px pink;
+    transition: all .3s ease;
+}
+
+.portada-card-infobottom a:hover {
+    transform: translateX(15px);
+}
+
+#info {
+    margin-top: 40px;
+    color: white;
+    font-size: 18px;
+    text-align: center;
+}
+
+.info-scroll {
+    display: flex;
+}
+
+.info-scroll p {
+    flex-wrap: wrap;
+}
+
