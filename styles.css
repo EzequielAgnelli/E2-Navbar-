@@ -147,23 +147,30 @@ main {
     display: flex;
 }
 
-.portada-card-infobottom a {
+.btn-portadabot {
     color: white;
     font-size: 15px;
     margin-top: 8px;
-    border-bottom: solid 2px pink;
+    padding: 10px;
+    border-radius: 12px;
+    background-color: #1e50ff;
     transition: all .3s ease;
+    border: none;
+    cursor: pointer;
 }
 
-.portada-card-infobottom a:hover {
+.portada-card-infobottom button:hover {
     transform: translateX(15px);
 }
 
 #info {
-    margin-top: 40px;
-    color: white;
-    font-size: 18px;
+    padding: 20px 0;
     text-align: center;
+}
+
+#info h2 {
+    color: white;
+    font-size: 25px;
 }
 
 .info-scroll {
@@ -172,5 +179,6 @@ main {
 
 .info-scroll p {
     flex-wrap: wrap;
+    color: white;
 }
 
