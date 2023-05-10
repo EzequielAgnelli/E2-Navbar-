@@ -1,3 +1,14 @@
+
+@keyframes slideInLeft {
+    from {
+        transform: translateX(-300px);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
+
 * {
     padding: 0;
     margin: 0;
@@ -7,13 +18,21 @@
     font-family: 'Lora';
 }
 
+body {
+}
+
+.cart-logo {
+    width: 70px;
+    cursor: pointer;
+}
+
 .navbar-img {
     height: 110px;
     padding: 0px 200px;
 }
 
 header {
-    background-color: #2B2B2B;
+    background-color: #050505;
     display: flex;
     height: 80px;
     justify-content: space-between;
@@ -26,7 +45,6 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
-    color: white;
     margin-right: 40px;
 }
 
@@ -49,7 +67,6 @@ header {
 }
 
 main {
-    background-color: #131313;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -58,6 +75,8 @@ main {
 }
 
 #portada {
+    background-color: rgba(0,0,0,.8);
+    padding: 20px 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -75,12 +94,12 @@ main {
 .portada-info h1 {
     font-size: 28px;
     color: #de734cf8;
-    font-weight: bolder;
 }
 
 .portada-info p {
     width: 90%;
-    color: #e2e2e5;
+    font-weight: 500;
+    color: white;
 }
 
 .portada-info span {
@@ -90,13 +109,14 @@ main {
 
 
 .portada-info a {
-    color: white;
-    padding: 15px;
+    color: black;
     display: flex;
+    padding: 10px;
     width: 30%;
+    font-weight: 800;
     text-align: center;
-    background-color: #1e50ff;
-    border-radius: 20px;
+    background-color: #88c7e0;
+    border-radius: 15px;
     transition: all .3s ease;
     margin-top: 14px;
     display: block;
@@ -107,9 +127,9 @@ main {
 }
 
 .portada-card {
-    background-color: #272d37;
+    outline: 1px solid white;
     padding: 20px;
-    margin-top: 40px;
+    margin-top: 10px;
     border-radius: 20px;
     box-shadow: 0 14px 28px rgba(255, 255, 255, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
     transition: .4s;
@@ -137,10 +157,10 @@ main {
 
 .portada-card-infotop p {
     padding: 6px;
-    background-color: #1e50ff;
-    border-radius: 12px;
+    color: black;
+    font-weight: 700;
     display: flex;
-    justify-content: center;
+    font-size: 16px;
 }
 
 .portada-card-infobottom {
@@ -148,12 +168,13 @@ main {
 }
 
 .btn-portadabot {
-    color: white;
+    color: black;
     font-size: 15px;
+    font-weight: 800;
     margin-top: 8px;
     padding: 10px;
     border-radius: 12px;
-    background-color: #1e50ff;
+    background-color: #88c7e0;
     transition: all .3s ease;
     border: none;
     cursor: pointer;
@@ -164,21 +185,52 @@ main {
 }
 
 #info {
-    padding: 20px 0;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    max-width: 1200px;
+    gap: 50px;
+    padding: 70px 0;
 }
 
 #info h2 {
-    color: white;
-    font-size: 25px;
+    animation-name: slideInLeft;
+    animation-duration: 1s;
+    animation-timing-function: ease-in;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
 }
 
-.info-scroll {
+.info-cards-container {
     display: flex;
-}
-
-.info-scroll p {
+    justify-content: space-around;
+    align-items: flex-start;
     flex-wrap: wrap;
-    color: white;
+    gap: 100px;
 }
 
+.info-card {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px 0;
+    gap: 25px;
+}
+
+.info-card img {
+    width: 200px;
+}
+
+.info-card h3 {
+    font-size: 24px;
+}
+
+.info-card p {
+    font-weight: 600;
+    color: #282a2e;
+}
