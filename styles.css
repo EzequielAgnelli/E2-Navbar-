@@ -20,7 +20,7 @@
 
 body {
 }
-
+                                     /* NAVBAR */
 .cart-logo {
     width: 70px;
     cursor: pointer;
@@ -65,7 +65,7 @@ header {
 .navbar-list li:hover {
     transform: translateY(10px);
 }
-
+                                     /* CONTENIDO PRINCIPAL, PORTADA */
 main {
     display: flex;
     flex-direction: column;
@@ -183,7 +183,7 @@ main {
 .portada-card-infobottom button:hover {
     transform: translateX(15px);
 }
-
+                                     /* ACA EMPIEZA INFO */
 #info {
     display: flex;
     justify-content: center;
@@ -233,4 +233,52 @@ main {
 .info-card p {
     font-weight: 600;
     color: #282a2e;
+}
+                                     /* ACA EMPIEZA EL FOOTER */
+.footer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    gap: 40px;
+}
+
+.container-links {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    padding: 10px;
+}
+
+.container-links li {
+    color: rgb(245, 125, 20);
+    font-weight: 700;
+    font-size: 17px;
+    padding: 5px 0;
+}
+
+.container-links a {
+    color: rgb(245, 125, 20);
+    padding: 7px 0;
+}
+
+.container-links h5 {
+    font-size: 25px;
+}
+
+.footer-img {
+    width: 25px;
+}
+
+.mapa {
+    outline: 2px solid gray;
 }
