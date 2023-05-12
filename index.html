@@ -4,22 +4,42 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>E2 Challenge Landing Page - Navbar</title>
+    <title>E4 Challenge</title>
     <link rel="stylesheet" href="/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Lato:wght@300&family=Lora&family=Manrope:wght@200&family=Mulish:wght@200&family=Nunito:wght@200&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <img class="navbar-img" src="/images/logo.png" alt="Logo">
+        <img src="/images/logo.png" alt="Logo" class="navbar-img">
         <nav class="navbar">
+
+            <label for="menu-toggle" class="menu-label">
+                <img src="./images/menu.png" alt="menu icon">
+            </label>
+
+            <input type="checkbox" id="menu-toggle">
             <ul class="navbar-list">
-                <li><a href="#">Mi Cuenta</a></li>
+                <li><a href="#">Cuenta</a></li>
                 <li><a href="#">Productos</a></li>
                 <li><a href="#">Ayuda</a></li>
                 <li><a href="#">Contacto</a></li>
             </ul>
-            <img  class="cart-logo" src="./images/shoppingcartwhite.png" alt="">
         </nav>
+        <label for="cart-toggle" class="cart-label">
+            <img src="./images/shoppingcartwhite.png" alt="Carrito de Compras" class="cart-icon"> 
+        </label>
+        <input type="checkbox" id="cart-toggle">
+
+        <div class="cart">
+            <h2>Tus Productos</h2>
+            <div class="cart-items">
+                <img src="./images/logo.png" alt="">
+
+                <div class="item-info">
+                    <h3>The Last of Us</h3>
+                </div>
+            </div>
+        </div>
     </header>
 
 
@@ -32,7 +52,7 @@
             </div>
 
             <div class="portada-card">
-                <img src="./images/TLOU1.png" alt="">
+                <img src="./images/TLOU1.png" alt="The Last of Us 1">
                 <div class="portada-card-infotop">
                     <h2>The Last of Us 1 </h2>
                     <p>$27.000</p>
@@ -46,23 +66,23 @@
             <h2>¿Por Que deberias elegirnos?</h2>
             <div class="info-cards-container">
                 <div class="info-card">
-                    <img src="./images/InfoHelp/Checkbox UI.png" alt="">
+                    <img src="./images/InfoHelp/Checkbox UI.png" alt="checkbox">
                     <h3>Confianza</h3>
                     <p>Nuestra tienda tiene increibles sponsors y esta verificada por distintas compañias internacionales de la industria.</p>
                 </div>
 
                 <div class="info-cards-container">
                     <div class="info-card">
-                        <img src="./images/InfoHelp/Chat UI.png" alt="">
+                        <img src="./images/InfoHelp/Chat UI.png" alt="chat image">
                         <h3>Soporte</h3>
                         <p>Tenemos uno de los mejores soportes y servicios al cliente que te podrias imaginar. Tenemos gente trabajando las 24 horas para poder resolver todos los problemas o dudas que tengas.</p>
                     </div>
 
                     <div class="info-cards-container">
                         <div class="info-card">
-                            <img src="./images/InfoHelp/User UI.png" alt="">
+                            <img src="./images/InfoHelp/User UI.png" alt="User UI">
                             <h3>Experimentacion</h3>
-                            <p>Tenemos la suerte de tener a gente que esta trabajando en esta industria desde hace mas de 10 años, lo cual nos hace tener una experiencia mas optima para nuestros clientes.</p>
+                            <p>Tenemos la suerte de contar con gente que esta trabajando en esta industria desde hace mas de 10 años, lo cual nos hace tener una experiencia mas optima para nuestros clientes.</p>
                         </div>
             </div>
         </section>
@@ -98,7 +118,7 @@
                 </ul>
             </div>
             <div class="mapa">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d105133.0096480032!2d-58.59204294042434!3d-34.56857821804166!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sar!4v1683760578344!5m2!1ses-419!2sar" width="500" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d105133.0096480032!2d-58.59204294042434!3d-34.56857821804166!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sar!4v1683760578344!5m2!1ses-419!2sar" width="350" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
         </div>
     </footer>
