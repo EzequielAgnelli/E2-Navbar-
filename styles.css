@@ -85,6 +85,8 @@ header {
     overflow-y: scroll;
     display: none;
     z-index: 2;
+    background-color: black;
+    color: white;
 }
 
 #cart-toggle:checked + .cart {
@@ -123,7 +125,10 @@ main {
 
 .portada-info h1 {
     font-size: 28px;
-    color: #de734cf8;
+    background: linear-gradient(to top, #30cfd0, #c43ad6);
+    background-clip: text;
+    color: transparent;
+    -webkit-background-clip: text;
 }
 
 .portada-info p {
@@ -291,7 +296,7 @@ main {
 }
 
 .container-links li {
-    color: rgb(245, 125, 20);
+    color: white;
     font-weight: 700;
     font-size: 17px;
     padding: 7px 0;
@@ -303,7 +308,7 @@ main {
 }
 
 .container-links a {
-    color: rgb(245, 125, 20);
+    color: white;
 }
 
 .container-links h5 {
@@ -318,7 +323,7 @@ main {
     outline: 2px solid black;
 }
 
-/* TABLET */
+                                                                          /* TABLET */
 
 @media (max-width: 992px) {
     .navbar {
@@ -356,10 +361,10 @@ main {
         font-size: 18px;
     }
 
-    /* Menu Icon */
+                                                                              /* Menu Icon */
     .menu-label {
         display: flex;
-        z-index: 2;
+        order: 2;
         cursor: pointer;
     }
 
@@ -372,7 +377,7 @@ main {
         display: flex;
     }
 
-                                         /* PORTADA */
+                                                                              /* PORTADA */
     .portada-info {
         width: 100%;
         text-align: center;
@@ -387,14 +392,31 @@ main {
     }
 
     .portada-info p {
-        width: 60%;
+        width: 90%;
         max-width: 600px;
+        font-size: 20px;
+    }
+
+    .portada-info a {
+        width: 50%;
     }
 
     .portada-card {
-        display: none;
+        margin: 0px 50px 0px 50px;
     }
-/* INFO */
+
+    .portada-card-infotop h2 {
+        font-size: 20px;
+    }
+
+    .portada-card-infotop p {
+        font-size: 18px;
+    }
+
+    .btn-portadabot {
+        font-size: 16px;
+    }
+                                                                              /* INFO */
     #info h2 {
         text-align: center;
         width: 80%;
@@ -408,7 +430,7 @@ main {
         max-width: 80%;
     }
 
-    /* FOOTER */
+                                                                              /* FOOTER */
     .footer {
         display: flex;
         flex-direction: column;
@@ -423,9 +445,16 @@ main {
         font-size: 16px;
         max-width: 90%;
     }
-}
 
-                                     /* CELULARES */
+    .container-links h5 {
+        font-size: 28px;
+    }
+
+    .footer-img {
+        margin: 0px 10px 0px 0px;
+    }
+}
+                                                                          /* CELULARES */
 @media (max-width: 576px) {
     .cart {
         left: 0;
@@ -436,7 +465,7 @@ main {
     .cart-item {
         flex-wrap: wrap;
     }
-
+                                                                              /* PORTADA */
     .portada-info {
         width: 100%;
         text-align: center;
@@ -450,10 +479,24 @@ main {
     }
 
     .portada-info p {
-        font-size: 15px
+        font-size: 15px;
     }
 
     .portada-info a {
         width: 70%;
     }
+
+    .portada-card {
+        display: none;
+    }
+                                                                          /* INFO */
+    .info-card img {
+        width: 140px;
+    }
+
+    .info-card p {
+        width: 300px;
+    }
 }
+
+                                                                          /* 1200PX */
