@@ -362,6 +362,7 @@ main {
     }
 
                                                                               /* Menu Icon */
+
     .menu-label {
         display: flex;
         order: 2;
@@ -378,6 +379,7 @@ main {
     }
 
                                                                               /* PORTADA */
+
     .portada-info {
         width: 100%;
         text-align: center;
@@ -417,6 +419,7 @@ main {
         font-size: 16px;
     }
                                                                               /* INFO */
+
     #info h2 {
         text-align: center;
         width: 80%;
@@ -431,6 +434,7 @@ main {
     }
 
                                                                               /* FOOTER */
+
     .footer {
         display: flex;
         flex-direction: column;
@@ -455,6 +459,7 @@ main {
     }
 }
                                                                           /* CELULARES */
+
 @media (max-width: 576px) {
     .cart {
         left: 0;
@@ -466,6 +471,7 @@ main {
         flex-wrap: wrap;
     }
                                                                               /* PORTADA */
+
     .portada-info {
         width: 100%;
         text-align: center;
@@ -490,6 +496,7 @@ main {
         display: none;
     }
                                                                           /* INFO */
+
     .info-card img {
         width: 140px;
     }
@@ -500,3 +507,13 @@ main {
 }
 
                                                                           /* 1200PX */
+
+@media (max-width: 1200px) {
+    .portada-info a {
+        width: 60%;
+    }
+
+    .info-cards-container {
+        max-width: 500px;
+    }
+}
